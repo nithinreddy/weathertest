@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dkF-PE-UDG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--City List-->
         <scene sceneID="pnl-5O-r6c">
             <objects>
-                <tableViewController id="PxN-Cc-aEC" sceneMemberID="viewController">
+                <tableViewController id="PxN-Cc-aEC" customClass="CityList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" id="tKe-O9-YnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VJw-HJ-7Oj" detailTextLabel="9ao-m0-zmw" rowHeight="59" style="IBUITableViewCellStyleValue1" id="NzV-OO-r1a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" textLabel="VJw-HJ-7Oj" detailTextLabel="9ao-m0-zmw" rowHeight="59" style="IBUITableViewCellStyleValue1" id="NzV-OO-r1a">
                                 <rect key="frame" x="0.0" y="92" width="375" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NzV-OO-r1a" id="v61-8U-sLH">
@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="PxN-Cc-aEC" id="w0e-IT-Hn2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="w44-64-4x3"/>
+                    <navigationItem key="navigationItem" title="City List" id="w44-64-4x3"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="-571.5" y="166.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Add City-->
         <scene sceneID="7mJ-1r-uc3">
             <objects>
-                <viewController id="DXy-1W-gXJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddCity" id="DXy-1W-gXJ" customClass="AddCity" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DO0-QV-zj6"/>
                         <viewControllerLayoutGuide type="bottom" id="dZu-FD-m2g"/>

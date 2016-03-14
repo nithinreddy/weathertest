@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CityList.h
 //  Weather
 //
 //  Created by Nithin Reddy on 14/03/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CityList : UITableViewController
 
+@property (nonatomic) NSMutableArray *cityList;
 
 @end
-
